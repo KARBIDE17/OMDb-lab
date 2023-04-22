@@ -1,0 +1,14 @@
+﻿@model Movie
+
+<form>
+    <label>Please enter the title of the movie you like to search for</label>
+    <form asp-controller="Home" asp-action="MovieSearchResults" method="post" role="form">
+
+        <label asp-for="Title">First Title: </label>
+        <input asp-for="Title" />
+
+        <input type="submit" />
+
+    </form>
+</form>
+

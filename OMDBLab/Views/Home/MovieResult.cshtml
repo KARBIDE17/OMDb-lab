@@ -1,0 +1,11 @@
+﻿@model Movie
+
+@if (Model.Title != null)
+{
+<h1>@Model.Title</h1>
+}
+else
+{
+    <p>Sorry, something went wrong.</p>
+    <p>@ViewBag.Exception</p>
+}
